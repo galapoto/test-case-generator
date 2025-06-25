@@ -117,6 +117,11 @@ Push this repo to GitHub
 4. Upload credentials.json and token.json into Secrets > Files
 
 👤 Created by
-<img src="images/avatar.png" width="100" alt="Vitus Idi"/>
-Vitus Idi
-🔗 GitHub Repository
+---
+
+## 👤 Created by
+
+![Vitus Idi](images/avatar.png)
+
+**Vitus Idi**  
+🔗 [GitHub Repository](https://github.com/galapoto/test-case-generator)
