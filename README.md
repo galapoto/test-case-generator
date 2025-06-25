@@ -120,7 +120,8 @@ Push this repo to GitHub
 
 ## 👤 Created by
 
-![Vitus Idi](images/avatar-fixed.png)
+![Vitus Idi](images/avatar.png)
 
-**Vitus Idi**
-[GitHub Repository](https://github.com/galapoto/test-case-generator)
+**Vitus Idi**  
+🔗 [GitHub Repository](https://github.com/galapoto/test-case-generator)
+
