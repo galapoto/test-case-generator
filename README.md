@@ -110,6 +110,7 @@ Project history is stored in saved_projects/
 Semantic search is powered by local filters (no external vector DB required).
 
 🤝 Contributions
+---
 
 ## 👤 Created by
 
