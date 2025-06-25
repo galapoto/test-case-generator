@@ -125,9 +125,9 @@ Push this repo to GitHub
 
 ---
 
-## 👤 Created by Vitus Id
+## 👤 Created by Vitus Idi
 
-![Vitus Idi](images/avatar.png)
+A person stands confidently with one hand in their pocket, dressed in a black suit and light pink dress shirt, against a plain light gray background. The overall tone is professional and poised. There is no visible text in the image.appears confident and professional. There is no visible text in the image.](images/avatar.png)[Vitus Idi](images/avatar.png)
 
 **Vitus Idi**  
 🔗 [GitHub Repository](https://github.com/galapoto/test-case-generator)
