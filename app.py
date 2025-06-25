@@ -6,7 +6,6 @@ import pandas as pd
 import datetime
 from image_base64 import img_base64, openai_logo_base64
 import re
-import pyrebase
 import json
 import urllib.parse
 import base64
@@ -135,7 +134,8 @@ firebase_config = {
     "measurementId": st.secrets["FIREBASE_MEASUREMENT_ID"],
     "databaseURL": ""
 }
-firebase = pyrebase.initialize_app(firebase_config)
+
+firebase = init_firebase()  # ✅ Replace direct call to pyrebase here
 auth = firebase.auth()
 
 # --- Session State Init ---
