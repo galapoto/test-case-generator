@@ -14,8 +14,6 @@ from google.oauth2.credentials import Credentials
 from google_auth_oauthlib.flow import InstalledAppFlow
 from googleapiclient.discovery import build
 from collections import defaultdict
-import faiss
-import numpy as np
 from prompts import get_prompt
 from firebase_auth import init_firebase, login_ui
 from memory import load_vector_data, append_vector_entry, save_vector_data
@@ -36,19 +34,6 @@ if not st.session_state.user:
 if st.session_state.user and not st.session_state.get("just_logged_in_shown", False):
     st.success("Logged in successfully!")
     st.session_state.just_logged_in_shown = True
-    
-VECTOR_DB_PATH = "faiss_index.index"
-VECTOR_DATA_PATH = "vector_data.json"
-
-vector_data = []
-
-# Load FAISS index if available
-if os.path.exists(VECTOR_DB_PATH):
-    index = faiss.read_index(VECTOR_DB_PATH)
-    with open(VECTOR_DATA_PATH, "r", encoding="utf-8") as f:
-        vector_data = json.load(f)
-else:
-    index = faiss.IndexFlatL2(1536)
 
 # --- Inlined Prompt Generator ---
 def get_prompt(user_story, test_type, format_type, expected_result, severity, category, framework, style):
@@ -199,27 +184,6 @@ search_query = st.text_input("🔍 Search by keywords (story or test case)")
 filter_title = st.text_input("📌 Filter by Project Title")
 filter_type = st.selectbox("🎯 Filter by Test Type", ["", "Functional", "Negative", "BDD (Gherkin)"])
 
-st.markdown("### 💾 Memory Backup / Restore")
-
-col1, col2 = st.columns(2)
-
-with col1:
-    if st.button("⬇️ Export Memory"):
-        with open("vector_data.json", "w", encoding="utf-8") as f:
-            json.dump(vector_data, f, indent=2)
-        faiss.write_index(index, "faiss_index.index")
-        st.success("✅ Exported vector_data.json and faiss_index.index")
-
-with col2:
-    if st.button("⬆️ Import Memory"):
-        if os.path.exists("vector_data.json") and os.path.exists("faiss_index.index"):
-            with open("vector_data.json", "r", encoding="utf-8") as f:
-                vector_data = json.load(f)
-            index = faiss.read_index("faiss_index.index")
-            st.success("✅ Imported previous memory!")
-        else:
-            st.error("❌ Files not found. Please ensure both files are in the app directory.")
-
 if os.path.exists("saved_projects"):
     for filename in os.listdir("saved_projects"):
         if filename.endswith(".json"):
@@ -308,16 +272,6 @@ if st.button("Generate"):
             if os.path.exists("vector_data.json"):
                 with open("vector_data.json", "r", encoding="utf-8") as f:
                     vector_data = json.load(f)
-
-            # --- Add new project to vector_data and re-save
-            vector_data.append({
-                "title": project_title,
-                "timestamp": timestamp,
-                "test_type": test_type,
-                "output": output
-            })
-            with open("vector_data.json", "w", encoding="utf-8") as f:
-                json.dump(vector_data, f, indent=2)
 
             # --- Filter/Search Results
             filtered_results = []
