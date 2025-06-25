@@ -110,15 +110,9 @@ Project history is stored in saved_projects/
 Semantic search is powered by local filters (no external vector DB required).
 
 🤝 Contributions
-# Footer
-<hr>
 
-<div style="display: flex; align-items: center; gap: 12px; margin-top: 20px;">
-  <img src="images/avatar.png" width="48" height="48" style="border-radius: 50%" alt="Vitus Idi">
-  <div>
-    <strong>Vitus Idi</strong><br>
-    <a href="https://github.com/galapoto/test-case-generator" target="_blank">
-      GitHub Repository
-    </a>
-  </div>
-</div>
+## 👤 Created by
+
+<img src="images/avatar.png" width="48" style="border-radius: 50%; margin-right: 10px;" alt="Vitus Idi">  
+**Vitus Idi**  
+🔗 [GitHub Repository](https://github.com/galapoto/test-case-generator)
