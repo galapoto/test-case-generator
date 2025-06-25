@@ -20,6 +20,9 @@ Supports BDD, data-driven, POM, and keyword-driven styles. Built by [Vitus Idi](
 - Python 3.10+
 - Pandas
 
+
+## 🔧 Setup
+
 ## 🔧 Setup
 
 ```bash
@@ -28,8 +31,9 @@ cd ai-testcase-generator
 python -m venv venv
 source venv/bin/activate  
 pip install -r requirements.txt
-Run the app:
 streamlit run app.py
+```
+
 
 Gmail API Setup
 Go to (https://console.cloud.google.com/)
@@ -51,9 +55,9 @@ Inside the `"saved_projects"` JSON, you already store timestamps — we’ll all
 ➡️ Already implemented via:
 ```python
 timestamp = datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
+```
 
 
----
 
 ## ✅ 4. `requirements.txt` (generate locally)
 
@@ -125,10 +129,4 @@ Push this repo to GitHub
 
 ---
 
-## 👤 Created by Vitus Idi
-
-A person stands confidently with one hand in their pocket, dressed in a black suit and light pink dress shirt, against a plain light gray background. The overall tone is professional and poised. There is no visible text in the image.appears confident and professional. There is no visible text in the image.](images/avatar.png)[Vitus Idi](images/avatar.png)
-
-**Vitus Idi**  
-🔗 [GitHub Repository](https://github.com/galapoto/test-case-generator)
-
+## 👤 Created by Vitus Idi ![alt text](avatar_icon_facebook_80x80.png)
