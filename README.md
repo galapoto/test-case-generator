@@ -1,6 +1,6 @@
 # 🧪 AI Test Case Generator
 
-A Streamlit-based AI tool for generating manual and automated test cases using OpenAI.  
+A Streamlit-based AI tool built for generating manual and automated test cases using OpenAI.  
 Supports BDD, data-driven, POM, and keyword-driven styles. Built by [Vitus Idi](https://github.com/galapoto).
 
 ## 🚀 Features
@@ -105,16 +105,18 @@ Folder Structure
 ├── requirements.txt
 ├── credentials.json / token.json
 
-Memory
-Project history is stored in saved_projects/
-Semantic search is powered by local filters (no external vector DB required).
+Memory and Versioning
+Test cases are saved in saved_projects/ as JSON and versioned by timestamp.
+Lightweight local memory is stored in vector_data.json for search and filters
 
-🤝 Contributions
----
+☁️ Deploying to Streamlit Cloud
+Push this repo to GitHub
+1. reate a new app on streamlit.io/cloud
+2. Set entry point to app.py
+3. Paste your secrets into Settings > Secrets
+4. Upload credentials.json and token.json into Secrets > Files
 
-## 👤 Created by
-
+👤 Created by
 <img src="images/avatar.png" width="100" alt="Vitus Idi"/>
-
-**Vitus Idi**  
-🔗 [GitHub Repository](https://github.com/galapoto/test-case-generator)
+Vitus Idi
+🔗 GitHub Repository
