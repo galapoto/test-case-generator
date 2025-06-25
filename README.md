@@ -114,6 +114,7 @@ Semantic search is powered by local filters (no external vector DB required).
 
 ## 👤 Created by
 
-<img src="images/avatar.png" width="48" style="border-radius: 50%; margin-right: 10px;" alt="Vitus Idi">  
+![Vitus Idi](images/avatar.png)
+
 **Vitus Idi**  
 🔗 [GitHub Repository](https://github.com/galapoto/test-case-generator)
