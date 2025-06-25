@@ -70,7 +70,7 @@ pyrebase4
 python-dotenv
 pandas
 
-5. .streamlit/secrets.toml (local use only)
+
 # .streamlit/secrets.toml
 
 FIREBASE_API_KEY = "your-api-key"
@@ -83,16 +83,42 @@ FIREBASE_MEASUREMENT_ID = "your-measurement-id"
 
 OPENAI_API_KEY = "your-openai-key"
 
+Streamlit Cloud Deployment
+1. Create a GitHub repo
+
+2. Push your files
+
+3. Create a new app at Streamlit Cloud
+
+4. Add your secrets.toml values under Settings → Secrets
+
+5. Upload credentials.json + token.json via Secrets > Files
+
+Folder Structure
+├── app.py
+├── prompts.py
+├── firebase_auth.py
+├── memory.py
+├── utils.py
+├── image_base64.py
+├── .streamlit/secrets.toml
+├── requirements.txt
+├── credentials.json / token.json
+
+Memory
+Project history is stored in saved_projects/
+Semantic search is powered by local filters (no external vector DB required).
+
+🤝 Contributions
 # Footer
-st.markdown(f'''
-<div style="display: flex; justify-content: space-between; align-items: center; margin-top: 50px;">
-    <div style="display: flex; align-items: center;">
-        <span>
-            Created by <a href="https://github.com/galapoto/test-case-generator.git" target="_blank">
-            <strong>Vitus Idi</strong></a>
-        </span>
-        <img src="data:image/png;base64,{img_base64}" alt="Vitus" width="40"
-             style="border-radius: 50%; margin-left: 10px;">
-    </div>
+<hr>
+
+<div style="display: flex; align-items: center; gap: 12px; margin-top: 20px;">
+  <img src="images/avatar.png" width="48" height="48" style="border-radius: 50%" alt="Vitus Idi">
+  <div>
+    <strong>Vitus Idi</strong><br>
+    <a href="https://github.com/galapoto/test-case-generator" target="_blank">
+      GitHub Repository
+    </a>
+  </div>
 </div>
-''', unsafe_allow_html=True)
