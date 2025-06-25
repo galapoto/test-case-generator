@@ -129,4 +129,9 @@ Push this repo to GitHub
 
 ---
 
-## 👤 Created by Vitus Idi ![alt text](avatar_icon_facebook_80x80.png)
+## 👤 Created by
+
+![Vitus Idi](images/avatar.png)
+
+**Vitus Idi**  
+🔗 [GitHub Repository](https://github.com/galapoto/test-case-generator)
