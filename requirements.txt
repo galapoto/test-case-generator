@@ -1,9 +1,8 @@
 streamlit
 openai
 python-dotenv
-pyrebase4
 pandas
-pyrebase4
+git+https://github.com/nhorvath/Pyrebase4.git
 google-cloud-storage
 google-auth
 google-auth-oauthlib
