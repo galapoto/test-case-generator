@@ -26,13 +26,13 @@ Supports BDD, data-driven, POM, and keyword-driven styles. Built by [Vitus Idi](
 git clone https://github.com/your-username/ai-testcase-generator.git
 cd ai-testcase-generator
 python -m venv venv
-source venv/bin/activate  # or venv\\Scripts\\activate on Windows
+source venv/bin/activate  
 pip install -r requirements.txt
 Run the app:
 streamlit run app.py
 
 Gmail API Setup
-Go to https://console.cloud.google.com/
+Go to (https://console.cloud.google.com/)
 
 Create a project, enable Gmail API
 
@@ -59,7 +59,6 @@ timestamp = datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
 
 In your terminal, run:
 
-```bash
 pip freeze > requirements.txt
 
 This will capture packages like:
@@ -70,8 +69,8 @@ pyrebase4
 python-dotenv
 pandas
 
-
-# .streamlit/secrets.toml
+---
+## .streamlit/secrets.toml
 
 FIREBASE_API_KEY = "your-api-key"
 FIREBASE_AUTH_DOMAIN = "your-app.firebaseapp.com"
@@ -82,6 +81,8 @@ FIREBASE_APP_ID = "your-app-id"
 FIREBASE_MEASUREMENT_ID = "your-measurement-id"
 
 OPENAI_API_KEY = "your-openai-key"
+
+---
 
 Streamlit Cloud Deployment
 1. Create a GitHub repo
@@ -94,6 +95,8 @@ Streamlit Cloud Deployment
 
 5. Upload credentials.json + token.json via Secrets > Files
 
+---
+
 Folder Structure
 ├── app.py
 ├── prompts.py
@@ -105,9 +108,13 @@ Folder Structure
 ├── requirements.txt
 ├── credentials.json / token.json
 
+---
+
 Memory and Versioning
 Test cases are saved in saved_projects/ as JSON and versioned by timestamp.
 Lightweight local memory is stored in vector_data.json for search and filters
+
+---
 
 ☁️ Deploying to Streamlit Cloud
 Push this repo to GitHub
@@ -118,5 +125,10 @@ Push this repo to GitHub
 
 ---
 
-👤 Created by Vitus Idi
+## 👤 Created by Vitus Id
+
+![Vitus Idi](images/avatar.png)
+
+**Vitus Idi**  
+🔗 [GitHub Repository](https://github.com/galapoto/test-case-generator)
 
