@@ -1,0 +1,20 @@
+[
+  {
+    "title": "test generator test run 1",
+    "timestamp": "2025-06-25_15-17-31",
+    "test_type": "Functional",
+    "output": "### Test Case 1: Verify user can login to the ecommerce website successfully\n\n```robotframework\n*** Test Cases ***\nLogin to Ecommerce Website\n    [Documentation]    Verify user can login to the ecommerce website\n    [Tags]    Login\n    Open Ecommerce Website\n    Input Username    testuser\n    Input Password    testpassword\n    Click Login Button\n    Verify User Logged In\n```\n\n### Test Case 2: Verify user can add items to cart and proceed to checkout\n\n```robotframework\n*** Test Cases ***\nAdd Items to Cart and Proceed to Checkout\n    [Documentation]    Verify user can add items to cart and proceed to checkout\n    [Tags]    Checkout\n    Add Item to Cart    Item1\n    Add Item to Cart    Item2\n    Click Proceed to Checkout\n    Verify Items in Cart\n```\n\n### Test Case 3: Verify user can enter shipping and payment information\n\n```robotframework\n*** Test Cases ***\nEnter Shipping and Payment Information\n    [Documentation]    Verify user can enter shipping and payment information\n    [Tags]    Payment\n    Input Shipping Address    123 Main St\n    Input Payment Method    Credit Card\n    Input Credit Card Number    1234 5678 9012 3456\n    Click Confirm Payment\n    Verify Payment Confirmation\n```"
+  },
+  {
+    "title": "Test banking system",
+    "timestamp": "2025-06-25_15-29-46",
+    "test_type": "Negative",
+    "output": "Manual Only\n\n1. Invalid login credentials: \n   - Enter incorrect username and password and verify if the system does not allow access to the account.\n   \n2. Insufficient funds:\n   - Try to make a transaction with an amount greater than the available balance and check if the system displays an error message.\n   \n3. Incorrect account details:\n   - Enter incorrect account number or routing number while making a transfer and verify if the system does not process the transaction.\n   \n4. Network connectivity issues:\n   - Disable internet connection while performing a transaction and check if the system handles the error gracefully.\n   \n5. Timeout errors:\n   - Keep the system idle for a long time and try to perform a transaction to check if the session times out and logs the user out."
+  },
+  {
+    "title": "Test banking system",
+    "timestamp": "2025-06-25_15-30-32",
+    "test_type": "Negative",
+    "output": "Negative Test Cases:\n\n1. Attempt to login with incorrect username and password\n2. Try to transfer funds without sufficient balance in the account\n3. Enter invalid account number while making a transaction\n4. Add a beneficiary with incomplete or incorrect details\n5. Try to withdraw an amount larger than the daily limit\n6. Enter special characters or symbols in the amount field during a transaction\n7. Make a payment without selecting a valid payment method\n8. Try to access the banking system without proper authentication\n9. Enter a future date while scheduling a bill payment\n10. Attempt to perform a transaction while the system is undergoing maintenance\n\nAutomation Code (Robot Framework - BDD):\n\n```robot\n*** Test Cases ***\nNegative Test Case 1: Login with incorrect credentials\n    Given User is on the login page\n    When User enters incorrect username and password\n    Then Error message should be displayed\n\nNegative Test Case 2: Transfer funds without sufficient balance\n    Given User is logged in to the banking system\n    When User tries to transfer an amount higher than the available balance\n    Then Transfer should be unsuccessful\n\nNegative Test Case 3: Invalid account number during transaction\n    Given User is on the transaction page\n    When User enters an invalid account number\n    Then Error message should be displayed\n\n... (add more negative test cases as needed)\n```\n\nSeverity: High\nCategory: Smoke"
+  }
+]
