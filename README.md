@@ -116,12 +116,11 @@ Push this repo to GitHub
 3. Paste your secrets into Settings > Secrets
 4. Upload credentials.json and token.json into Secrets > Files
 
-👤 Created by
 ---
 
 ## 👤 Created by
 
 ![Vitus Idi](images/avatar.png)
 
-**Vitus Idi**  
-🔗 [GitHub Repository](https://github.com/galapoto/test-case-generator)
+**Vitus Idi**
+[GitHub Repository](https://github.com/galapoto/test-case-generator)
