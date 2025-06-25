@@ -118,9 +118,5 @@ Push this repo to GitHub
 
 ---
 
-## 👤 Created by
+👤 Created by Vitus Idi
 
-![Vitus Idi](data:image/png;base64,...yourBase64Here...)
-
-**Vitus Idi**  
-🔗 [GitHub Repository](https://github.com/galapoto/test-case-generator)
