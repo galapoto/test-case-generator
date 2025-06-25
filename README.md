@@ -1,7 +1,7 @@
 # 🧪 AI Test Case Generator
 
 A Streamlit-based AI tool built for generating manual and automated test cases using OpenAI.  
-Supports BDD, data-driven, POM, and keyword-driven styles. Built by [Vitus Idi](https://github.com/galapoto).
+Supports BDD, data-driven, POM, and keyword-driven styles.
 
 ## 🚀 Features
 
@@ -131,7 +131,7 @@ Push this repo to GitHub
 
 ## 👤 Created by
 
-![Vitus Idi](images/avatar.png)
+![Vitus Idi](images/avatar-fixed.png)
 
 **Vitus Idi**  
 🔗 [GitHub Repository](https://github.com/galapoto/test-case-generator)
