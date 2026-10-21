@@ -1,0 +1,1 @@
+GitHub Copilot: read AGENTS.md before any run. GLOBAL-AGENT-RUN-PROOF v1 requires exact project-plan subsection, before/after stage, core-function proof, safe licensed code reuse vs adaptation vs scratch, exact original CI/deployed truth, and whole-project DONE/IN PROGRESS/NOT STARTED/BLOCKED. Existing restrictive rules stay binding.
