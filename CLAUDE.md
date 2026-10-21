@@ -1,0 +1,1 @@
+Claude and other agents: always read root AGENTS.md. After every run show plan ID, before/after core functionality, reused prior code/safety/licensing vs scratch and evidence, exact tests/CI and real deployment status, whole-project progress and blockers. Respect existing approval and security gates.
